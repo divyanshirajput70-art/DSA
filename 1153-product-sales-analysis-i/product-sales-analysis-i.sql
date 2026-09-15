@@ -1,7 +1,8 @@
 # Write your MySQL query statement below
-SELECT P.PRODUCT_NAME,
-       S.PRICE,
-       S.YEAR
-FROM SALES S
-JOIN PRODUCT P
-ON S.PRODUCT_ID = P.PRODUCT_ID;
+SELECT P.product_name,
+      S.year,
+      S.price
+      #S.sale_id,
+FROM Sales S
+JOIN Product P 
+ON S.product_id = P.product_id ;   
